@@ -1,14 +1,20 @@
-
-
 import 'dart:ui';
 
-import 'package:flicked_app/controllers/main_page_data_controller.dart';
+//Packages
+
 import 'package:flicked_app/models/main_page_data.dart';
-import 'package:flicked_app/models/movie.dart';
-import 'package:flicked_app/models/search_category.dart';
-import 'package:flicked_app/widgets/movie_tile.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+
+//Widgets
+import '../widgets/movie_tile.dart';
+
+//Models
+import '../models/search_category.dart';
+import '../models/movie.dart';
+
+//Controllers
+import '../controllers/main_page_data_controller.dart';
 
 final mainPageDataControllerProvider =
     StateNotifierProvider<MainPageDataController, MainPageData>((ref) {

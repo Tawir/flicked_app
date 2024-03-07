@@ -1,11 +1,17 @@
+//Package
+import 'dart:async';
 
 
-import 'package:flicked_app/models/main_page_data.dart';
-import 'package:flicked_app/models/movie.dart';
 import 'package:flicked_app/models/search_category.dart';
-import 'package:flicked_app/services/movie_service.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:get_it/get_it.dart';
+
+//Models
+import '../models/main_page_data.dart';
+import '../models/movie.dart';
+
+//Services
+import '../services/movie_service.dart';
 
 class MainPageDataController extends StateNotifier<MainPageData> {
   MainPageDataController([MainPageData? state])
